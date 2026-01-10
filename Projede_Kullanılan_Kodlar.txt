@@ -1,114 +1,140 @@
 Activity_main.xml
 
-<LinearLayout
-    android:orientation="vertical"
-    android:padding="14dp"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFF8F3">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="#FFCCBC"
-        android:padding="18dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:text="🍽️ Evimin Lezzetleri"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="#BF360C"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:text="Lezzetli tariflerini kaydet"
-            android:textSize="14sp"
-            android:textColor="#6D4C41"
-            android:layout_marginTop="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="#FFFFFF"
-        android:padding="14dp"
-        android:elevation="6dp"
-        android:layout_marginBottom="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:text="📝 Yeni Tarif"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="#4CAF50"
-            android:layout_marginBottom="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <EditText
-            android:id="@+id/editTitle"
-            android:hint="Tarif adı (örn: Menemen)"
-            android:textSize="15sp"
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="14dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content">
 
-        <Spinner
-            android:id="@+id/spinnerCategory"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <!-- Üst Başlık -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#FFB74D"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/editRecipe"
-            android:hint="Tarif açıklaması"
-            android:layout_marginTop="8dp"
-            android:layout_height="100dp"
-            android:gravity="top"
-            android:inputType="textMultiLine"
-            android:textSize="14sp"
-            android:layout_width="match_parent"/>
+                <TextView
+                    android:text="🍽️ Evimin Lezzetleri"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-        <Button
-            android:id="@+id/buttonSave"
-            android:text="Kaydet 🍲"
-            android:textSize="15sp"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#4CAF50"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+                <TextView
+                    android:text="Tariflerini kaydet, düzenle ve sakla"
+                    android:textSize="14sp"
+                    android:textColor="#FFF3E0"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-    <!-- Filtre -->
-    <TextView
-        android:text="📂 Kategoriye Göre Tarifler"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        android:textColor="#D84315"
-        android:layout_marginBottom="6dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <!-- Yeni Tarif Kartı -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="16dp">
 
-    <Spinner
-        android:id="@+id/spinnerFilter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-    <!-- Tarif Listesi -->
-    <ListView
-        android:id="@+id/listView"
-        android:layout_marginTop="12dp"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+                    <TextView
+                        android:text="📝 Yeni Tarif"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#4CAF50"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/editTitle"
+                        android:hint="Tarif adı"
+                        android:background="@android:drawable/edit_text"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/editRecipe"
+                        android:hint="Tarif açıklaması"
+                        android:layout_marginTop="8dp"
+                        android:gravity="top"
+                        android:minHeight="100dp"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:background="@android:drawable/edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:text="Kaydet 🍲"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#4CAF50"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Filtre -->
+            <TextView
+                android:text="📂 Kategoriye Göre Tarifler"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#6F1D05"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Liste -->
+            <ListView
+                android:id="@+id/listView"
+                android:layout_marginTop="12dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 MainActivity.java
 
 package com.example.buseproje;
@@ -328,16 +354,22 @@ private void loadRecipes(String filter) {
 
 card_bg.xml (Tarif Kartları İçin)
 
-<solid android:color="#FFFFFF"/>
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-<corners android:radius="12dp"/>
+    <solid android:color="#FFFFFF"/>
 
-<padding
-    android:left="16dp"
-    android:top="12dp"
-    android:right="16dp"
-    android:bottom="12dp"/>
+    <corners android:radius="12dp"/>
 
-<stroke
-    android:width="1dp"
-    android:color="#E0E0E0"/>
+    <padding
+        android:left="16dp"
+        android:top="12dp"
+        android:right="16dp"
+        android:bottom="12dp"/>
+
+    <stroke
+        android:width="1dp"
+        android:color="#E0E0E0"/>
+
+</shape>
+

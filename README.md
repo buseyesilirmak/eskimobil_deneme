@@ -45,6 +45,9 @@ Kategoriye Göre Filtreleme: Alt menüden bir kategori seçerek o kategoriye ait
 
 Ekran Görüntüleri
 
+<img width="934" height="783" alt="image" src="https://github.com/user-attachments/assets/df9b2a3f-9fa4-4df5-93a4-2e801392813d" />
+<img width="945" height="887" alt="image" src="https://github.com/user-attachments/assets/dbb40690-7d55-4624-ba13-f68b35cd9ba0" />
+
 
 Geliştirici
 

@@ -23,6 +23,7 @@ Veritabanı: SQLite
 IDE: Android Studio
 Arayüz: XML
 
+
 Proje Yapısı
 app/src/main/
 ├── java/.../
@@ -33,6 +34,7 @@ app/src/main/
     ├── activity_main.xml       # Ana ekran tasarımı
     ├── item_recipe.xml         # Kart görünümlü tarif öğesi
     └── dialog_add_recipe.xml   # Tarif ekleme ve düzenleme ekranı
+
 
 
 Kullanım

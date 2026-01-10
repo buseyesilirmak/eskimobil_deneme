@@ -21,6 +21,7 @@ Tarif detaylarını ayrı ekranda görüntüleme
 SQLite ile yerel veri saklama
 
 
+
 Kullanılan Teknolojiler
 
 Dil: Java

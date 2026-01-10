@@ -9,11 +9,17 @@ BuseProje, Android Studio ve SQLite kullanılarak geliştirilmiş bir tarif deft
 Özellikler
 
 Tarif ekleme
+
 Tarif düzenleme ve silme
+
 Kategori bazlı organizasyon (Kahvaltı, Ana Yemek, Tatlı, İçecek vb.)
+
 Kategoriye göre tarif filtreleme
+
 Tarif detaylarını ayrı ekranda görüntüleme
+
 SQLite ile yerel veri saklama
+
 
 Kullanılan Teknolojiler
 
@@ -38,10 +44,15 @@ Proje Yapısı
 Kullanım
 
 Tarif Ekle: Tarif adı → Kategori seç → Açıklama yaz → Kaydet
+
 Tarif Görüntüle: Listeden bir tarife tıklayarak detaylarını görüntüleyebilirsiniz
+
 Tarif Güncelle: Tarife tıkla → Düzenle → Kaydet
+
 Tarif Sil: Tarife tıkla → Sil
+
 Kategoriye Göre Filtreleme: Alt menüden bir kategori seçerek o kategoriye ait tarifleri listeleyebilirsiniz
+
 
 Ekran Görüntüleri
 

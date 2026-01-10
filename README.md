@@ -29,7 +29,9 @@ Arayüz: XML
 
 
 Proje Yapısı
+
 <img width="619" height="250" alt="image" src="https://github.com/user-attachments/assets/6cb0bc63-c910-46a7-be7b-889549156836" />
+
 
 
 

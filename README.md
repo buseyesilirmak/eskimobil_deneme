@@ -49,6 +49,7 @@ Ekran Görüntüleri
 <img width="945" height="887" alt="image" src="https://github.com/user-attachments/assets/dbb40690-7d55-4624-ba13-f68b35cd9ba0" />
 
 
+
 Geliştirici
 
 Buse Yeşilırmak

@@ -18,22 +18,18 @@ SQLite ile yerel veri saklama
 Kullanılan Teknolojiler
 
 Dil: Java
+
 Platform: Android (Min API 26)
+
 Veritabanı: SQLite
+
 IDE: Android Studio
+
 Arayüz: XML
 
 
 Proje Yapısı
-app/src/main/
-├── java/.../
-│   ├── MainActivity.java        # Ana ekran ve tarif işlemleri
-│   ├── DatabaseHelper.java     # SQLite veritabanı işlemleri
-│   └── Recipe.java             # Tarif model sınıfı
-└── res/layout/
-    ├── activity_main.xml       # Ana ekran tasarımı
-    ├── item_recipe.xml         # Kart görünümlü tarif öğesi
-    └── dialog_add_recipe.xml   # Tarif ekleme ve düzenleme ekranı
+<img width="619" height="250" alt="image" src="https://github.com/user-attachments/assets/6cb0bc63-c910-46a7-be7b-889549156836" />
 
 
 
